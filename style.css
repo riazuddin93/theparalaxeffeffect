@@ -15,17 +15,61 @@ body {
     overflow-x: hidden;
 }
 
+nav{
+    /* background: pink; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 0 120px;
+    position:absolute;
+    top:0;
+    z-index: 100;
+    background: white;
+}
+
+nav .left{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+}
+
+nav .left ul{
+    list-style: none;
+    display: flex;
+    padding-left: 50px;
+    color: black
+   
+}
+nav .left ul li{
+    padding-left: 20px;
+    text-transform: uppercase;
+    /* text-shadow: 4px 4px 6px black;  */
+    font-weight: 300;
+    font-size: 12px;
+   
+}
 
 
+.hero{
+    height: 100vh;
+    background: url('room.jpg') no-repeat center/cover;
+}
+nav  h3{
+   
+        color: grey;
+        /* text-shadow: 4px 4px 6px black; */
+        font-size: 32px;
+    
+}
 
 
 .parallax {
-    position: relative;
+    position:inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('room.jpg') no-repeat center/cover;
+   
 }
 
 
@@ -35,6 +79,7 @@ body {
     left: 0;
     width: 100%;
     pointer-events: none;
+    z-index: 0;
 }
 
 .sec {
